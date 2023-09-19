@@ -1,6 +1,5 @@
 import './App.css';
 import styled from 'styled-components';
-import React from 'react';
 
 const Navigation = () => {
     return (
@@ -31,17 +30,23 @@ function App() {
                 <Title>Accessibility</Title>
                 <Form>
                     <div>
-                        <Label htmlFor="1">Label for field 1</Label>
+                        <Label htmlFor="1">
+                            Label for field 1
+                        </Label>
                         <Field id="1" placeholder="Field 1"/>
                     </div>
 
                     <div>
-                        <Label htmlFor="2">Label for field 2</Label>
+                        <Label htmlFor="2">
+                            Label for field 2
+                        </Label>
                         <Field id="2" placeholder="Field 2"/>
                     </div>
 
                     <div>
-                        <Label htmlFor="3">Label for field 3</Label>
+                        <Label htmlFor="3">
+                            Label for field 3
+                        </Label>
                         <Field id="3" placeholder="Field 3"/>
                     </div>
                 </Form>
@@ -50,7 +55,7 @@ function App() {
     );
 }
 
-export default App;
+export default App
 
 const Title = styled.h1`
   font-size: 1.5em;
@@ -74,7 +79,7 @@ const Menu = styled.ul`
 
 const MenuItem = styled.li`
   font-weight: bold;
-  
+
   a {
     color: white;
     text-decoration: none;
@@ -82,10 +87,12 @@ const MenuItem = styled.li`
 `;
 
 const LoginBtn = styled.button`
-  color: white;
+  color: #fff;
+  background-color: #e91e63;
+  cursor: pointer;
   font-weight: bold;
   padding: 10px 20px;
-  border: 2px solid;
+  border: 2px solid #fff;
   border-radius: 5px;
 `;
 
@@ -96,7 +103,7 @@ const Block = styled.section`
   align-items: center;
 `;
 
-const Form = styled.div`
+const Form = styled.form`
   width: 100%;
   max-width: 500px;
   display: flex;
